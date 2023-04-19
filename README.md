@@ -7,7 +7,7 @@ It's a responsive web application using Vue.js as the frontend framework, VueX f
 
 # Screenshots
 
-[Home Page of the To-Do List Application](src/assets/todolist-main.png)
+[![Home Page of the To-Do List Application](src/assets/todolist-main.png)]
 
 [Creating a Task](src/assets/todolist-create-task.png)
 
