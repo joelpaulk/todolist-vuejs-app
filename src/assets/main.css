@@ -1,0 +1,336 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+
+html {
+    background: #fafafa !important;
+}
+
+div#app, body, h2, a {
+    font-family: monospace !important;
+}
+
+li {
+    list-style: none;
+}
+
+.user-name-container {
+    max-width: 525px;
+    margin: 0 auto;
+    text-align: left;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.user-name-container label {
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.user-name-container input {
+    width: 120px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #cdcdcd;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding-bottom: 0px;
+    border-radius: 0px;
+}
+
+.user-name-container input:focus-visible {
+    outline: none;
+}
+
+.todo-list-header, .completed-list-header {
+    text-align: left;
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 12px !important;
+    margin-top: 10px;
+}
+
+/* Create To Do List Form Styles */
+.todo-task-field {
+    height: 40px;
+    width: 265px;
+    font-family: monospace;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#form-create-todo input:focus-visible {
+    outline-color: #ffd43b;
+}
+.todo-datepicker {
+    height: 40px;
+    width: 120px;
+    font-family: monospace;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    text-align: start;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.todo-add-task {
+    height: 40px;
+    width: 120px;
+    font-family: monospace;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    border-bottom-color: #202020;
+    text-align: center;
+    padding: 0;
+    vertical-align: bottom;
+}
+
+#form-create-todo button:hover, #form-create-todo button:active {
+    background-color: #ffd43b;
+}
+
+#task-created {
+    max-width: 525px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #cccccc;
+}
+
+#task-created li {
+    height: 100%;
+    width: 140px;
+    margin: 0 auto;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-table;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.task-icon {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.task-icon i {
+    font-size: 24px;
+    color: #888888;
+}
+
+.task-checkbox {
+    text-align: left;
+    border: 1px solid;
+    scale: 1.4;
+    margin: 0;
+}
+
+.task-textbox {
+    width: 94px;
+    margin-left: 8px;
+    height: 25px;
+    border-radius: 0;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #cdcdcd !important;
+    font-family: monospace;
+    font-size: 14px;
+    vertical-align: super;
+    margin-bottom: 10px;
+    color: #707070;
+    border-style: solid;
+    word-spacing: -5px;
+}
+
+.task-textbox:hover, .task-textbox:active, .task-textbox:focus-visible {
+    border-bottom: 1px solid #4a4a4a;
+    outline: none;
+    color: #4a4a4a;
+}
+
+.task-delete {
+    width: 48%;
+    height: 30px;
+    margin-right: 4%;
+    border: none;
+    border-radius: 5px;
+    background: #e7e7e7;
+    color: #4a4a4a;
+    margin-left: 0;
+}
+
+.task-clone {
+    width: 48%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #e7e7e7;
+    color: #4a4a4a;
+    margin-left: 0;
+}
+
+.task-clone:hover, .task-clone:active {
+    background: #ffd43b;
+    color: #ffffff;
+}
+
+.task-delete:hover, .task-delete:active {
+    background: #d54141;
+    color: #ffffff;
+}
+
+.task-duedate {
+    text-align: left;
+    display: block;
+    height: 23px;
+    font-size: 10px;
+    color: #929292;
+    margin-left: 0;
+}
+
+/* Completed Tasks Styles */
+
+#tasks-completed {
+    padding: 0;
+    max-width: 525px;
+    margin: 0 auto;
+}
+
+#tasks-completed li {
+    margin: 0 auto;
+    text-align: left;
+    background: #e8e8e8;
+    vertical-align: middle;
+    justify-content: center;
+    padding-left: 10px;
+    border-left-width: 18px;
+    border-left-color: #8bc564 !important;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 0 10px 10px 0;
+    padding-top: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.task-icon-completed {
+    margin-right: 10px;
+    color: #4a4a4a;
+}
+
+#tasks-completed li del {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.created-by {
+    bottom: 30px;
+    width: 98%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+.text-red-500 {
+  color: red;
+}
+
+/* Delete Task Modal Style */
+
+/* .delete-modal-outer {
+    height: 100vh;
+     width: 100vw;
+     background-color: white;
+     top: 0;
+     position: absolute;
+     opacity: 0.9;
+} */
+
+.delete-modal-inner {
+    vertical-align: middle;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 22%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.delete-modal-outer button {
+    height: 42px;
+    width: 120px;
+    font-family: monospace;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    border-bottom-color: #202020;
+    text-align: center;
+    padding: 0;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.delete-modal-outer .cancel:hover,
+.delete-modal-outer .cancel:active {
+    background-color: #ffd43b;
+}
+
+.delete-modal-outer .delete:hover,
+.delete-modal-outer .delete:active {
+    background-color: #ff4949;
+}
+
+
+@media (max-width: 640px) {
+
+    .main-outer-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .icon-selector .icon-button {
+        width: 100% !important;
+    }
+
+    .todo-task-field {
+        width: 100% !important;
+        text-align: left !important;
+        padding-left: 10px !important;
+    }
+
+    .todo-task-icon {
+        width: 50px !important;
+    }
+
+    .todo-datepicker {
+        width: 60% !important;
+        height: 42px !important;
+    }
+
+    .todo-add-task {
+        height: 42px;
+        width: 37% !important;
+        margin-top: 10px;
+    }
+
+    .icon-selector-container {
+        margin-bottom: 10px !important;
+    }
+}
