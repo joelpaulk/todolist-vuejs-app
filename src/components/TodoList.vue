@@ -22,12 +22,12 @@
           v-model="newTodo"
           placeholder="What needs to be done?"
           required
-          class="todo-task-field border border-gray-300 p-2 rounded w-full lg:w-1/2"
+          class="todo-task-field border border-gray-300 p-2 rounded w-full"
         >
         <input
           type="date"
           v-model="newTodoDueDate"
-          class="todo-datepicker border border-gray-300 p-2 rounded w-full lg:w-1/4"
+          class="todo-datepicker border border-gray-300 p-2 rounded w-full"
         >
         <button
           type="submit"
