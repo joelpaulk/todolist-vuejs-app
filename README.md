@@ -5,19 +5,25 @@ This project is a Vue.js 2.7.14 application integrated with VueX & Tailwind CSS.
 It demonstrates how to create a create a list of tasks, with a set due date that can be edited, deleted or cloned further.
 It's a responsive web application using Vue.js as the frontend framework, VueX for state management and Tailwind CSS for styling, along with custom CSS for an enhanced UI/UX.
 
-# Screenshots
+## Screenshots
 
-[![Home Page of the To-Do List Application](src/assets/todolist-main.png)]
+### Home Page of the To-Do List Application:
+![Home Page of the To-Do List Application](src/assets/todolist-main.png)
 
-[Creating a Task](src/assets/todolist-create-task.png)
+## Creating a Task:
+![Creating a Task](src/assets/todolist-create-task.png)
 
-[Task Creation Complete](src/assets/todolist-task-created.png)
+## Task Creation Complete:
+![Task Creation Complete](src/assets/todolist-task-created.png)
 
-[Task Complete](src/assets/todolist-task-completed.png)
+## Task Complete:
+![Task Complete](src/assets/todolist-task-completed.png)
 
-[Deleting a Task](src/assets/todolist-task-delete.png)
+## Deleting a Task:
+![Deleting a Task](src/assets/todolist-task-delete.png)
 
-[The About Page](src/assets/todolist-about.png)
+## The About Page:
+![The About Page](src/assets/todolist-about.png)
 
 ## Features
 
