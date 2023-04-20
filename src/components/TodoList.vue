@@ -33,7 +33,7 @@
           type="submit"
           class="todo-add-task font-bold py-2 px-4 rounded mt-4"
         >
-        <i :class="['fas', `fa-${selectedIcon}`]" v-if="selectedIcon"></i>
+        <!-- <i :class="['fas', `fa-${selectedIcon}`]" v-if="selectedIcon"></i> -->
           Add Task
         </button>
       </form>
