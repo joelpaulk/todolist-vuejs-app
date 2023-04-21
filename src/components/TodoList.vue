@@ -41,7 +41,7 @@
         <li
           v-for="todo in pendingTodos"
           :key="todo.id"
-          class="border-b border-gray-300 p-2"
+          class="todo-item border-b border-gray-300 p-2"
         >
         <span class="task-icon">
             <i :class="['fas', `fa-${todo.icon}`]" v-if="todo.icon"></i>
